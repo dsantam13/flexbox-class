@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #edf2f7;
+}
+
+code {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    display: flex;
+    width: 640px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.card>.content {
+    margin-left: 15px;
+}
+
+.page-header {
+    /*  Making header.page-header a Flex-container and aligning elements  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #607d8b;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+}
+
+.logo {
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #ff5722;
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-header .menu {
+    margin: 0;
+}
+
+.menu {
+    padding: 15px;
+    margin: 0;
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 4px;
+    background-color: #2196f3;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /*  Making ul.menu a Flex container  */
+    display: flex;
+}
+
+.menu.reversed {
+    /*  We rotate the main axis from right to left  */
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.menu>.item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.menu.reversed>.item:not(:last-child) {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.menu .link {
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+}
+
+.menu.flex-end {
+    justify-content: flex-end;
+}
+
+.menu.center {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.menu .link:hover {
+    text-decoration: underline;
+}
